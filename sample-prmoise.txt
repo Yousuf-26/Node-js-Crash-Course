@@ -1,0 +1,15 @@
+Must now Topics
+
+1. File System
+    - learn about fs.readFile()
+    - path module like - path.join
+    - __dirname,__filename
+    - uncaught exceptions
+    - fs.writeFile()
+    - fs.rename()
+    - fs.appendFile()
+    -fsPromises.readFile()
+2. Understand the difference between callback API and Promise API
+    - Callback API makes the code convoluted and contributes to callback hell
+    - Promise API makes it way easier to manage the code using async await
+ I am appending using fs promise
