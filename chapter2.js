@@ -9,11 +9,11 @@
     process - instance of program in execution on a computer
 */
 
-const fs = require('fs');
+//const fs = require('fs');
 
 //better use the path because that would make it os-indepedent, as the slashes for files are used differently based
 //on different OS
-const path = require('path')
+//const path = require('path')
 
 //C:\JSCert\Node-js-Crash-Course\sample2.txt
 //console.log(path.join(__dirname,'sample2.txt'));
@@ -66,7 +66,9 @@ process.on('uncaughtException', err =>{
 */
 
 
-// Handling files with promises
+// ---------------------------------------------------------Handling files with promises
+
+/*
 const fsPromises = require('fs').promises;
 const pathy = require('path');
 
@@ -87,3 +89,57 @@ const filesOps = async () =>{
 }
 
 filesOps()
+*/
+
+//--------------------------------------------------STREAM 
+//---> for larger files , helps to gather files with some chunks rather than completely get the whole file
+/*
+const fss = require('fs')
+const pathyy= require('path')
+const rs = fss.createReadStream(pathyy.join(__dirname,'server.js'), {encoding:'utf8'});
+const ws = fss.createWriteStream('./newStream.txt');
+
+
+rs.on('data',(dataChunk)=>{
+
+    ws.write(dataChunk);
+})
+
+// does the same thing as above put in a much efficient way
+rs.pipe(ws)
+*/
+
+//----------------------------------------FOLDERS AND DIRECTORY HANDLING
+const fs = require('fs');
+
+//checks if file exists
+if(!fs.existsSync('./New-FS')){
+
+    fs.mkdir('./New-FS', (err)=>{
+
+        //check if the file exist
+        
+        if(err) throw err;
+        console.log('Directory is created using fs module');
+
+})     
+}else{
+    console.log('No directory is created since it exists')
+}
+
+if(fs.existsSync('./New-FS')){
+
+    fs.rmdir('./New-FS', (err)=>{
+
+        //check if the file exist
+        
+        if(err) throw err;
+        console.log('Directory is removed using fs module');
+
+})     
+}else{
+    console.log('No directory is created since it exists')
+}
+
+
+

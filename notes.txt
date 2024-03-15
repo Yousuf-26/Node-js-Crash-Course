@@ -12,6 +12,11 @@ Must now Topics
     -fsPromises.appendFile()
     -fsPromises.rename()
     -fs.unlink() --> helps to delete file
+    -handling files with stream
+    -rs.pipe() ---> handling data stream using pipes
+    -fs.mkdir()
+    -fs.existsSync(filename,callback) --> checks if file exists
+    - fs.rmdir()
 
 2. Understand the difference between callback API and Promise API
     - Callback API makes the code convoluted and contributes to callback hell
