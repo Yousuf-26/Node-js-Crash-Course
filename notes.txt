@@ -28,3 +28,6 @@ Must now Topics
     -gitignore
     -npm update
     -npm install
+
+4.Event Emitter
+
