@@ -16,8 +16,15 @@ Must now Topics
     -rs.pipe() ---> handling data stream using pipes
     -fs.mkdir()
     -fs.existsSync(filename,callback) --> checks if file exists
-    - fs.rmdir()
+    -fs.rmdir()
 
 2. Understand the difference between callback API and Promise API
     - Callback API makes the code convoluted and contributes to callback hell
     - Promise API makes it way easier to manage the code using async await
+
+3. NPM package
+    -nodemon 
+    -package - date i date-fns, uuid
+    -gitignore
+    -npm update
+    -npm install
