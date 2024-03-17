@@ -30,4 +30,10 @@ Must now Topics
     -npm install
 
 4.Event Emitter
+    - EventEmitter
+    - class Emitter
+    - .on() will run all the duplicates and will not remove the program
+    - .once() will run only once and would remove the emit from the program
+    - .emit();
+    - writeHead()
 
