@@ -37,3 +37,18 @@ Must now Topics
     - .emit();
     - writeHead()
 
+5. Node.js http
+
+   - http = require("http");
+   - http.createServer();
+   - res.end()
+   - server.listen()
+
+6 EXPRESS
+   -require("express")
+   -app.get()
+   -res.sendFile()
+   -res.send()
+   
+7. Middleware
+
